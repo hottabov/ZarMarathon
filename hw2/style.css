@@ -1,0 +1,18 @@
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 12px;
+}
+
+.hw1__title {
+    color: chocolate;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hw1__img {
+    width: 100%;
+    max-width: 480px;
+}
