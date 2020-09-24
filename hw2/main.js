@@ -1,19 +1,21 @@
 const firstRow = 'мама мыла раму';
 const secondRow = 'собака друг человека';
 
-function getRow(firstRow, secondRow) {
-    let a = '',
-        b = '';
-
-    for (let i = 0; i < firstRow.length; i++) {
-        console.log(firstRow.charAt(i));
-        let counter = 0;
-        if (a == 'a') {
-            counter++;
+function countLetter(str, letter){
+    let res = 0;
+    for ( let i = 0; i < str.length; i++) {
+        if (str.charAt(i) == letter) {
+            res++;
         }
-        console.log(a);
-        console.log(counter);
     }
+    return res;
+}
+
+function getRow(firstRow, secondRow) {
+
+    let a = countLetter(firstRow, 'а'),
+        b = countLetter(secondRow, 'а');
+
     if (a > b) {
         return firstRow;
     } else if (a == b) {
